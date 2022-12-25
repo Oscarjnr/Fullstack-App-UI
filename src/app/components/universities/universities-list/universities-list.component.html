@@ -1,1 +1,31 @@
-<p>universities-list works!</p>
+<div class="container my-5">
+    <h1 class="mb-6">Universities</h1>
+
+    <table class="table" *ngIf="universities && universities.length > 0">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name of University</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Name of Vice Chancellor</th>
+                <th>Email</th>
+                <th>Contact</th>
+                <th> </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let university of universities">
+                <td>{{ university.id }}</td>
+                <td>{{ university.nameOfUniversity }}</td>
+                <td>{{ university.city }}</td>
+                <td>{{ university.state }}</td>
+                <td>{{ university.nameOfVC }}</td>
+                <td>{{ university.email }}</td>
+                <td>{{ university.contactNumber }}</td>
+                <td><a [routerLink]="[ '/universities', 'edit', university.id ]">View</a></td>
+            </tr>
+        </tbody>
+    </table>
+    <p *ngIf="!universities || universities.length <= 0">Universities Not Found</p>
+</div>
