@@ -1,0 +1,49 @@
+<div class="container my-5">
+    <h1 class="mb-3">Add New University</h1>
+
+    <div class="row">
+        <div class="col-6">
+            <form #form="ngForm" (ngSubmit)="addUniversity()">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name of University</label>
+                  <input type="text" class="form-control" id="name" 
+                  name="name" [(ngModel)]="addUniversityRequest.name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="city" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city"
+                    name="city" [(ngModel)]="addUniversityRequest.city">
+                </div>
+
+                <div class="mb-3">
+                    <label for="state" class="form-label">State</label>
+                    <input type="text" class="form-control" id="state"
+                    name="state" [(ngModel)]="addUniversityRequest.state">
+                </div>
+
+                <div class="mb-3">
+                    <label for="VC" class="form-label">Vice Chancellor</label>
+                    <input type="text" class="form-control" id="VC"
+                    name="VC" [(ngModel)]="addUniversityRequest.VC">
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email"
+                    name="email" [(ngModel)]="addUniversityRequest.email">
+                </div>
+
+                <div class="mb-3">
+                    <label for="contact" class="form-label">Contact</label>
+                    <input type="number" class="form-control" id="contac"
+                    name="contact" [(ngModel)]="addUniversityRequest.contact">
+                </div>
+                
+                
+                <button type="submit" class="btn btn-primary">Save</button>
+              </form>
+        </div>
+    </div>
+
+</div>

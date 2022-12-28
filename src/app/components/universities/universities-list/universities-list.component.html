@@ -17,12 +17,12 @@
         <tbody>
             <tr *ngFor="let university of universities">
                 <td>{{ university.id }}</td>
-                <td>{{ university.nameOfUniversity }}</td>
+                <td>{{ university.name }}</td>
                 <td>{{ university.city }}</td>
                 <td>{{ university.state }}</td>
-                <td>{{ university.nameOfVC }}</td>
+                <td>{{ university.VC }}</td>
                 <td>{{ university.email }}</td>
-                <td>{{ university.contactNumber }}</td>
+                <td>{{ university.contact }}</td>
                 <td><a [routerLink]="[ '/universities', 'edit', university.id ]">View</a></td>
             </tr>
         </tbody>

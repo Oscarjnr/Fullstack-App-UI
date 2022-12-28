@@ -1,10 +1,10 @@
 export interface University {
     id: string;
-    nameOfUniversity: string;
+    name: string;
     city: string;
     state: string;
-    nameOfVC: string;
+    VC: string;
     email: string;
-    contactNumber: number;
+    contact: number;
 
 }
