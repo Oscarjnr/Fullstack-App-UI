@@ -3,7 +3,7 @@ export interface University {
     name: string;
     city: string;
     state: string;
-    VC: string;
+    vc: string;
     email: string;
     contact: number;
 

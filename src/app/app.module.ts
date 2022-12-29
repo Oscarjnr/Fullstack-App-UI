@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { UniversitiesListComponent } from './components/universities/universities-list/universities-list.component';
 import { AddUniversityComponent } from './components/universities/add-university/add-university.component';
 import { FormsModule } from '@angular/forms';
+import { EditUniversityComponent } from './components/universities/edit-university/edit-university.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UniversitiesListComponent,
-    AddUniversityComponent
+    AddUniversityComponent,
+    EditUniversityComponent
   ],
   imports: [
     BrowserModule,

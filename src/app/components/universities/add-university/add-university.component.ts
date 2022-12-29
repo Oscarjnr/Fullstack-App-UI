@@ -14,7 +14,7 @@ export class AddUniversityComponent implements OnInit {
     name: '',
     city: '',
     state: '',
-    VC: '',
+    vc: '',
     email: '',
     contact: 0
   };
